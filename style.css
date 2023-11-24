@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: aquamarine;
+    margin-top: 0;
+    justify-content: flex-end;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navItem:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.imageWrapper {
+    max-width: 35rem;
+    min-width: 15rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.aboutMeContent {
+    max-width: 35rem;
+    min-width: 15rem;
+    padding: 1rem;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.bigImage {
+    max-width: 70rem;
+    min-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.smallImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.workItems {
+    width: 35rem;
+    position: relative;
+}
+
+.workDescription {
+    position: absolute;
+    color: rgb(95, 136, 172);
+    top: 40%;
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#contact {
+    background-color: rgb(199, 154, 154);
+    margin-bottom: 0;
+}
+
+.footerItem a {
+    font-size: 2em;
+    color: black;
+}
