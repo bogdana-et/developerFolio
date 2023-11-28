@@ -22,6 +22,11 @@ h1 {
     padding-left: 50px;
 }
 
+h3 {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -99,6 +104,12 @@ img:hover {
     margin-top: 15px;
 }
 
+.work {
+    background-color: #053326;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
 /*Left grid template for possible future use*/
 .workImages {
     /*display: grid;
@@ -112,22 +123,24 @@ img:hover {
     display: flex;
     flex-wrap: wrap;    
     justify-content: center;   
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 20px;
     min-width: 40rem;
+    gap: 1rem;
 }
 
 .work h2 {
     display: flex;
-    margin-left: 300px;
+    margin-left: 350px;
+    align-items: center;
+    padding-top: 20px;
+    color: #E3E4CE;
 }
 
 hr {
-    margin-left: 300px;
-    margin-right: 300px;
     height: 2px;
-    background-color: #053326;
+    background-color: #E3E4CE;
 }
 
 #bigImage {
@@ -139,32 +152,43 @@ hr {
 #bigImage img {
     height: 600px;
     object-fit: cover;
+    border: #E3E4CE;
+    border-style: solid;
+    border-style: unset;
 }
 
 #project2, #project3, #project4, #project5 {
     display: flex;  
-    width: 50%;
+    width: 49%;
     height: 300px;
 }
 
 #project2 img {
     height: 300px;
     object-fit: cover;
+    border: #E3E4CE;
+    border-style: solid;
 }
 
 #project3 img {
     height: 300px;
     object-fit: cover;
+    border: #E3E4CE;
+    border-style: solid;
 }
 
 #project4 img {
     height: 300px;
     object-fit: cover;
+    border: #E3E4CE;
+    border-style: solid;
 }
 
 #project5 img {
     height: 300px;
     object-fit: cover;
+    border: #E3E4CE;
+    border-style: solid;
 }
 
 .workItems {
@@ -197,11 +221,15 @@ footer {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #053326;
+    color: #E3E4CE;
+    width: 100%;
 }
 
 .footerItem a {
     font-size: 2em;
-    color: black;
+    color:#E3E4CE;
 }
 
 /*Added smooth scroll for nav links*/
