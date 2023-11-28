@@ -147,18 +147,17 @@ hr {
 
 #bigImage {
     grid-area: 'mainImage';
-    width: 100%;
+    width: 98.5%;
     min-width: 30rem;
-    margin-left: 5px;
     margin-right: 5px;
 }
 
 #bigImage img {
     height: 650px;
     object-fit: cover;
-    border: #E3E4CE;
+    border: rgba(67, 207, 142, 0.616);
     border-style: solid;
-    border-style: unset;
+    
 }
 
 #project2, #project3, #project4, #project5 {
@@ -170,28 +169,28 @@ hr {
 #project2 img {
     height: 300px;
     object-fit: cover;
-    border: #E3E4CE;
+    border: rgba(67, 207, 142, 0.616);
     border-style: solid;
 }
 
 #project3 img {
     height: 300px;
     object-fit: cover;
-    border: #E3E4CE;
+    border: rgba(67, 207, 142, 0.616);
     border-style: solid;
 }
 
 #project4 img {
     height: 300px;
     object-fit: cover;
-    border: #E3E4CE;
+    border: rgba(67, 207, 142, 0.616);
     border-style: solid;
 }
 
 #project5 img {
     height: 300px;
     object-fit: cover;
-    border: #E3E4CE;
+    border: rgba(67, 207, 142, 0.616);
     border-style: solid;
 }
 
