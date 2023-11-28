@@ -6,6 +6,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 header {
     display: flex;
     background-color: #053326;
@@ -18,7 +19,6 @@ h1 {
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    background-color: #707253;
     padding-left: 50px;
 }
 
@@ -68,7 +68,7 @@ img:hover {
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 20px;
-    background-color: rgb(251, 252, 246);
+    background-color: #053326;
     border-color: #053326;
     border-width: 5px;
     border-style: solid;
@@ -83,7 +83,6 @@ img:hover {
 
 .imageWrapper img {
     width: 300px;
-    box-shadow: 5px 5px 5px 5px #8d885f85;
     margin: 15px;
     min-width: 10rem;
 }
@@ -94,8 +93,13 @@ img:hover {
     min-width: 15rem;
     padding: 1rem;
     grid-area: 'aboutMe';
+    color: #E3E4CE;
+    background-color: #006142;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
+/*Left grid template for possible future use*/
 .workImages {
     /*display: grid;
     grid-template-columns: 1fr 2fr;
@@ -106,30 +110,12 @@ img:hover {
     'project4 project5';
     */
     display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    
+    flex-wrap: wrap;    
+    justify-content: center;   
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 20px;
     min-width: 40rem;
-}
-/*
-#allImages {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: 
-    'heading mainImage mainImage'
-    'heading project2 project3'
-    'heading project4 project5';
-    */
-}
-
-
-.work {
-    margin-left: 300px;
 }
 
 .work h2 {
@@ -150,10 +136,35 @@ hr {
     min-width: 30rem;
 }
 
+#bigImage img {
+    height: 600px;
+    object-fit: cover;
+}
+
 #project2, #project3, #project4, #project5 {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
     width: 50%;
+    height: 300px;
+}
+
+#project2 img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#project3 img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#project4 img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#project5 img {
+    height: 300px;
+    object-fit: cover;
 }
 
 .workItems {
@@ -184,9 +195,16 @@ hr {
 
 footer {
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .footerItem a {
     font-size: 2em;
     color: black;
+}
+
+/*Added smooth scroll for nav links*/
+html {
+    scroll-behavior: smooth; 
 }
