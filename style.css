@@ -44,6 +44,14 @@ h1 {
     cursor: pointer;
 }
 
+a {
+    color: #E3E4CE;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
 img {
     width: 100%;
     border-color: #053326;
@@ -89,21 +97,22 @@ img:hover {
 }
 
 .workImages {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas: 
     'mainImage mainImage'
     'project2 project3'
     'project4 project5';
-    /*
-        display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
     */
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
     margin-left: 300px;
     margin-right: 300px;
+    margin-top: 20px;
     min-width: 40rem;
 }
 /*
@@ -123,29 +132,28 @@ img:hover {
     margin-left: 300px;
 }
 
+.work h2 {
+    display: flex;
+    margin-left: 300px;
+}
+
+hr {
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 2px;
+    background-color: #053326;
+}
+
 #bigImage {
     grid-area: 'mainImage';
+    width: 100%;
+    min-width: 30rem;
 }
 
-/* {
-    border-color: #053326;
-    border-width: 20px;
-} */
-
-#project2 {
-    grid-area: 'project2';
-}
-
-#project3 {
-    grid-area: 'project3';
-}
-
-#project4 {
-    grid-area: 'project4';
-}
-
-#project5 {
-    grid-area: 'project5';
+#project2, #project3, #project4, #project5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .workItems {
@@ -162,6 +170,9 @@ img:hover {
     border-radius: 3px;
     margin: 0.5rem;
     font-weight: bolder;
+    border-color: #053326;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .socials {
