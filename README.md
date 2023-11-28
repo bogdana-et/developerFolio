@@ -1,4 +1,5 @@
-![screencapture-bogdana-et-github-io-developerFolio-2023-11-28-22_13_19](https://github.com/bogdana-et/developerFolio/assets/146033718/b0ed573f-bf3a-445b-b466-18b5c5878f54)# developerFolio
+# DeveloperFolio
+
 A portfolio website where I showcase my best recent work/applications.
 
 ## Description
