@@ -108,6 +108,8 @@ img:hover {
     background-color: #053326;
     margin-left: 300px;
     margin-right: 300px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /*Left grid template for possible future use*/
@@ -147,10 +149,12 @@ hr {
     grid-area: 'mainImage';
     width: 100%;
     min-width: 30rem;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #bigImage img {
-    height: 600px;
+    height: 650px;
     object-fit: cover;
     border: #E3E4CE;
     border-style: solid;
@@ -218,6 +222,7 @@ hr {
 }
 
 footer {
+    margin-top: 15px;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
