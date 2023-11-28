@@ -12,6 +12,7 @@ header {
     margin-top: 0;
     justify-content: flex-end;
     color: #E3E4CE;
+    min-width: 20rem;
 }
 
 h1 {
@@ -55,26 +56,32 @@ img:hover {
     opacity: 0.7;
 }
 
-.imageWrapper {
-    max-width: 25rem;
-    min-width: 15rem;
-}
-
-.imageWrapper img {
-    border-color: #053326;
-    border-width: 10px;
-    box-shadow: 5px 5px 5px 5px #8d885f85;
-    grid-area: 'myPhoto';
-}
-
 .about {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'myPhoto aboutMe aboutMe';
     margin-left: 300px;
+    margin-right: 300px;
     margin-top: 20px;
+    background-color: rgb(251, 252, 246);
+    border-color: #053326;
+    border-width: 5px;
+    border-style: solid;
 }
+
+.imageWrapper {
+    max-width: 25rem;
+    min-width: 15rem;
+    grid-area: 'myPhoto';
+}
+
+.imageWrapper img {
+    width: 300px;
+    box-shadow: 5px 5px 5px 5px #8d885f85;
+    margin: 15px;
+}
+
 
 .aboutMeContent {
     max-width: 45rem;
@@ -83,22 +90,64 @@ img:hover {
     grid-area: 'aboutMe';
 }
 
-.bigImage {
-    max-width: 70rem;
-    min-width: 40rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
-.smallImages {
-    display: flex;
+.workImages {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    'mainImage mainImage'
+    'project2 project3'
+    'project4 project5';
+    /*
+        display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    */
+    margin-left: 300px;
+    margin-right: 300px;
+    min-width: 40rem;
+}
+/*
+#allImages {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    'heading mainImage mainImage'
+    'heading project2 project3'
+    'heading project4 project5';
+    */
+}
+
+
+.work {
+    margin-left: 300px;
+}
+
+#bigImage {
+    grid-area: 'mainImage';
+}
+
+/* {
     border-color: #053326;
     border-width: 20px;
+} */
+
+#project2 {
+    grid-area: 'project2';
+}
+
+#project3 {
+    grid-area: 'project3';
+}
+
+#project4 {
+    grid-area: 'project4';
+}
+
+#project5 {
+    grid-area: 'project5';
 }
 
 .workItems {
@@ -108,12 +157,13 @@ img:hover {
 
 .workDescription {
     position: absolute;
-    color: rgb(95, 136, 172);
+    color: #053326;
     top: 40%;
-    background-color: aqua;
+    background-color: rgba(67, 207, 142, 0.808);
     padding: 1rem;
     border-radius: 3px;
     margin: 0.5rem;
+    font-weight: bolder;
 }
 
 .socials {
