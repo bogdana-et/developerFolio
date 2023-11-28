@@ -19,6 +19,8 @@ h1 {
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
+    background-color: #707253;
+    padding-left: 50px;
 }
 
 .nav {
@@ -36,12 +38,12 @@ h1 {
 
 .navItem {
     list-style: none;
+    font-weight: 500;
 }
 
 .navItem:hover {
     cursor: pointer;
 }
-
 
 img {
     width: 100%;
@@ -54,23 +56,31 @@ img:hover {
 }
 
 .imageWrapper {
-    max-width: 35rem;
+    max-width: 25rem;
     min-width: 15rem;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.imageWrapper img {
+    border-color: #053326;
+    border-width: 10px;
+    box-shadow: 5px 5px 5px 5px #8d885f85;
+    grid-area: 'myPhoto';
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'myPhoto aboutMe aboutMe';
+    margin-left: 300px;
+    margin-top: 20px;
 }
 
 .aboutMeContent {
-    max-width: 35rem;
+    max-width: 45rem;
     min-width: 15rem;
     padding: 1rem;
-}
-
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    grid-area: 'aboutMe';
 }
 
 .bigImage {
@@ -113,7 +123,7 @@ img:hover {
     justify-content: center;
 }
 
-#contact {
+footer {
     margin-bottom: 0;
 }
 
